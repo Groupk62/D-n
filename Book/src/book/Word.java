@@ -25,4 +25,8 @@ public class Word {
         word_target = eng;
         word_explain = viet;
     }
+    
+    public String toString(){
+        return this.getWord_target();
+    }
 }
