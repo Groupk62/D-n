@@ -17,6 +17,7 @@ public class Edit extends Application {
             Scene sEdit = new Scene(eRoot);
             sEdit.getStylesheets().add(getClass().getResource("Addstyle.css").toExternalForm());
             stage.setTitle("Edit Dictionary");
+            
             stage.setScene(sEdit);
             stage.show();
         }

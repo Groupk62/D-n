@@ -1,32 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.text.*?>
-<?import javafx.geometry.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="410.0" prefWidth="563.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="book.AddController">
+<AnchorPane id="AnchorPane" prefHeight="410.0" prefWidth="551.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="book.AddController">
    <children>
-      <Label layoutX="42.0" layoutY="95.0" prefHeight="35.0" prefWidth="96.0" styleClass="ADD" text="English        :">
+      <ImageView fitHeight="410.0" fitWidth="574.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@03.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="124.0" layoutY="95.0" prefHeight="35.0" prefWidth="96.0" styleClass="ADD" text="English        :">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="42.0" layoutY="136.0" prefHeight="35.0" prefWidth="96.0" styleClass="ADD" text="Vietnamese:">
+      <Label layoutX="124.0" layoutY="136.0" prefHeight="35.0" prefWidth="96.0" styleClass="ADD" text="Vietnamese:">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="textEng" layoutX="136.0" layoutY="95.0" maxWidth="408.0" prefHeight="35.0" prefWidth="408.0" promptText="Nhập từ tiếng anh tại đây..." styleClass="ADD">
+      <TextField fx:id="textEng" layoutX="235.0" layoutY="95.0" maxWidth="408.0" prefHeight="35.0" prefWidth="210.0" promptText="Nhập từ tiếng anh tại đây..." styleClass="ADD">
          <padding>
             <Insets left="5.0" right="5.0" />
          </padding>
       </TextField>
-      <Label id="welcome-text" alignment="BOTTOM_LEFT" layoutX="42.0" layoutY="15.0" prefHeight="63.0" prefWidth="324.0" styleClass="ADD" text="Add Dictionary" textFill="#868686" />
-      <Button fx:id="bAdd" layoutX="42.0" layoutY="181.0" mnemonicParsing="false" onAction="#add" prefHeight="23.0" prefWidth="50.0" text="Add" />
-      <TextArea fx:id="textViet" layoutX="136.0" layoutY="136.0" maxHeight="600.0" maxWidth="408.0" prefHeight="255.0" prefWidth="408.0" promptText="Nhập từ tiếng việt tại đây..." styleClass="ADD" />
+      <Label id="welcome-text" alignment="BOTTOM_LEFT" layoutX="180.0" layoutY="15.0" prefHeight="63.0" prefWidth="239.0" styleClass="ADD" text="Add Dictionary" textFill="#b99400" />
+      <Button fx:id="bAdd" layoutX="124.0" layoutY="180.0" mnemonicParsing="false" onAction="#add" prefHeight="23.0" prefWidth="50.0" text="Add" />
+      <TextArea fx:id="textViet" layoutX="235.0" layoutY="136.0" maxHeight="600.0" maxWidth="408.0" prefHeight="185.0" prefWidth="298.0" promptText="Nhập từ tiếng việt tại đây..." />
    </children>
 </AnchorPane>

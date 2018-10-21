@@ -2,6 +2,7 @@ package book;
 
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.*;
 import java.util.ResourceBundle;
 import java.util.Scanner;
 import javafx.beans.value.ChangeListener;
@@ -24,6 +25,7 @@ public class DictionaryCommandline implements Initializable {
     private Stage sAdd = new Stage();
     private Stage sDelete = new Stage();
     private Stage sEdit = new Stage();
+ 
     private ObservableList<Word> dictionarys;
     @FXML
       private TextField text1 = new TextField();
@@ -35,6 +37,14 @@ public class DictionaryCommandline implements Initializable {
       private ListView<String> list1 = new  ListView<String>();
     
     public void showAllWords(ArrayList<Word> list) {   // in ArrayList ra man hinh
+        Comparator<Word> w=new Comparator<Word>(){
+            @Override
+            public int compare(Word a,Word b){
+               
+                return a.getWord_target().compareTo(b.getWord_target());
+            }
+        };
+        Collections.sort(list,w);
         System.out.println("No 	| English 		| Vietnamese");
         for(int i=0; i < list.size(); i++){
             System.out.print(i+1);
@@ -77,7 +87,10 @@ public class DictionaryCommandline implements Initializable {
         add.start(sAdd);
     }
     
-    @FXML
+
+
+   
+     @FXML
     private void remove(ActionEvent event) {
         Delete delete = new Delete();
         delete.start(sDelete);
