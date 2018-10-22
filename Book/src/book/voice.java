@@ -33,12 +33,12 @@ public class voice{
    
 
  
-    public void start(Stage stage) {
+   /* public void start(Stage stage) {
         try{
-            sayWords("hello");
+            sayWords(String words);
         }
         catch(Exception e){
             e.printStackTrace();
         }
     }
-}
+*/

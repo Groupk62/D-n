@@ -23,48 +23,46 @@
                   <Image url="@background.jpg" />
                </image>
             </ImageView>
-            <VBox layoutX="101.0" layoutY="177.0" opacity="0.99" prefHeight="422.0" prefWidth="228.0" spacing="10.0">
+            <VBox layoutX="185.0" layoutY="249.0" opacity="0.99" prefHeight="317.0" prefWidth="144.0" spacing="10.0">
                <children>
-                  <ListView fx:id="list" prefHeight="449.0" prefWidth="228.0" />
+                  <Label fx:id="broad" alignment="TOP_LEFT" contentDisplay="TEXT_ONLY" prefHeight="354.0" prefWidth="167.0" stylesheets="@style.css" textAlignment="CENTER" wrapText="true">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="25.0" top="5.0" />
+                     </padding>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="NONE" />
+                     </cursor>
+                  </Label>
                </children>
             </VBox>
-            <HBox alignment="TOP_RIGHT" layoutX="562.0" layoutY="123.0" prefHeight="44.0" prefWidth="70.0" spacing="10.0">
+            <HBox alignment="TOP_RIGHT" layoutX="632.0" layoutY="75.0" prefHeight="96.0" prefWidth="0.0" spacing="10.0">
                <padding>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="13.0" />
                </padding>
-               <children>
-                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#repair" prefHeight="25.0" prefWidth="58.0" text="Edit" />
-               </children>
             </HBox>
-            <Label id="label3" fx:id="broad" alignment="TOP_LEFT" contentDisplay="TEXT_ONLY" layoutX="455.0" layoutY="265.0" prefHeight="124.0" prefWidth="134.0" styleClass="ADD" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="270.0" AnchorPane.leftAnchor="455.0" AnchorPane.rightAnchor="174.0" AnchorPane.topAnchor="265.0">
-               <padding>
-                  <Insets bottom="10.0" left="10.0" right="25.0" top="5.0" />
-               </padding>
-               <font>
-                  <Font size="14.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="NONE" />
-               </cursor>
-            </Label>
             <VBox alignment="TOP_CENTER" layoutX="663.0" layoutY="78.0" prefHeight="160.0" prefWidth="100.0" spacing="10.0">
                <padding>
                   <Insets left="23.0" right="5.0" />
                </padding>
             </VBox>
-            <TextField fx:id="text1" layoutX="95.0" layoutY="87.0" opacity="0.51" prefHeight="35.0" prefWidth="240.0" promptText="Nhập từ gợi ý ở đây..." styleClass="ADD" />
-            <Button alignment="CENTER" layoutX="153.0" layoutY="128.0" mnemonicParsing="false" onAction="#find" prefHeight="38.0" prefWidth="110.0" text="Search">
+            <TextField fx:id="text1" layoutX="176.0" layoutY="122.0" opacity="0.8" prefHeight="41.0" prefWidth="159.0" promptText="Nhập từ gợi ý ở đây..." styleClass="ADD" />
+            <Button alignment="CENTER" layoutX="257.0" layoutY="171.0" mnemonicParsing="false" onAction="#find" prefHeight="32.0" prefWidth="78.0" text="Search">
                <font>
                   <Font size="16.0" />
                </font>
             </Button>
-            <Button alignment="CENTER" layoutX="467.0" layoutY="71.0" mnemonicParsing="false" text="Voice">
+            <Button alignment="CENTER" layoutX="467.0" layoutY="71.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="55.0" text="Voice">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button alignment="CENTER" layoutX="572.0" layoutY="70.0" mnemonicParsing="false" onAction="#extra" prefHeight="25.0" prefWidth="60.0" text="Add" />
-            <Button alignment="CENTER" layoutX="467.0" layoutY="135.0" mnemonicParsing="false" onAction="#remove" prefHeight="25.0" prefWidth="58.0" text="Delete" />
+            <Button alignment="CENTER" layoutX="565.0" layoutY="70.0" mnemonicParsing="false" onAction="#extra" prefHeight="31.0" prefWidth="67.0" text="Add" />
+            <Button alignment="CENTER" layoutX="466.0" layoutY="126.0" mnemonicParsing="false" onAction="#remove" prefHeight="31.0" prefWidth="58.0" text="Delete" />
+            <ListView fx:id="list" layoutX="443.0" layoutY="168.0" prefHeight="410.0" prefWidth="238.0" />
+            <Button alignment="CENTER" layoutX="567.0" layoutY="126.0" mnemonicParsing="false" onAction="#repair" prefHeight="32.0" prefWidth="64.0" text="Edit" />
          </children>
       </AnchorPane>
    </bottom>
